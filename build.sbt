@@ -37,13 +37,14 @@ val shapelessDatatypeVersion = "0.1.9"
 
 val CompileTime = config("compile-time").hide
 
+ThisBuild / scalaVersion := "2.11.12"
+
 ThisBuild / crossScalaVersions := Seq("2.11.12", "2.12.6")
 
 lazy val commonSettings = Seq(
   organization := "com.spotify",
   name := "featran",
   description := "Feature Transformers",
-  scalaVersion := "2.11.12",
   scalacOptions ++= commonScalacOptions,
   scalacOptions in (Compile, doc) ++= Seq("-skip-packages", "org.apache"),
   javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint:unchecked"),
