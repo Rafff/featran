@@ -174,7 +174,6 @@ lazy val java: Project = project
     name := "java",
     moduleName := "featran-java",
     description := "Feature Transformers - java",
-    scalaVersion := "2.11.12",
     crossScalaVersions := Seq("2.11.12"),
     libraryDependencies ++= Seq(
       "org.scalacheck" %% "scalacheck" % scalacheckVersion % "test",
@@ -291,7 +290,6 @@ lazy val tensorflow: Project = project
     name := "tensorflow",
     moduleName := "featran-tensorflow",
     description := "Feature Transformers - TensorFlow",
-    scalaVersion := "2.11.12",
     crossScalaVersions := Seq("2.11.12", "2.12.6"),
     libraryDependencies ++= Seq(
       "org.tensorflow" % "proto" % tensorflowVersion,
