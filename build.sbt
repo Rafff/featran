@@ -37,6 +37,8 @@ val shapelessDatatypeVersion = "0.1.9"
 
 val CompileTime = config("compile-time").hide
 
+ThisBuild / crossScalaVersions := Seq("2.11.12", "2.12.6")
+
 lazy val commonSettings = Seq(
   organization := "com.spotify",
   name := "featran",
