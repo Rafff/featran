@@ -119,6 +119,7 @@ lazy val root: Project = project
   .settings(featranSettings)
   .settings(
     scalaVersion := "2.11.12",
+    crossScalaVersions := Seq("2.11.12"),
     siteSubdirName in ScalaUnidoc := "api",
     addMappingsToSiteDir(mappings in (ScalaUnidoc, packageDoc), siteSubdirName in ScalaUnidoc),
     gitRemoteRepo := "git@github.com:spotify/featran.git",
